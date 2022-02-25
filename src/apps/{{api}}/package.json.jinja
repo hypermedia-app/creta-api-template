@@ -4,8 +4,8 @@
   "private": "true",
   "scripts": {
     "init": "knossos init",
-    "bootstrap": "talos put --api ${{api|upper}}_BASE --endpoint $SPARQL_URL --user $SPARQL_USER --password $SPARQL_PASSWORD",
-    {% if vocabs %}"bootstrap:vocabs": "talos put-vocabs --apiDoc ${{api|upper}}/api --endpoint $SPARQL_URL --user $SPARQL_USER --password $SPARQL_PASSWORD",{%- endif %}
+    "bootstrap": "talos put --api ${{api|upper}}_BASE --endpoint $SPARQL_URL --user $SPARQL_USER --password $SPARQL_PASSWORD",{%- if vocabs %}
+    "bootstrap:vocabs": "talos put-vocabs --apiDoc ${{api|upper}}/api --endpoint $SPARQL_URL --user $SPARQL_USER --password $SPARQL_PASSWORD",{%- endif %}
     "build": "tsc"
   },
   "dependencies": {
