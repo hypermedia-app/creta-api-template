@@ -54,6 +54,3 @@ additional_vocabs:
   type: yaml
   when: "{{vocabs}}"
   help: Additional vocabularies to insert to the store
-  placeholder:
-    - "@zazuko/rdf-vocabularies,sh,schema,foaf"
-    - "@my-org/vocabularies"
