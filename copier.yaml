@@ -37,7 +37,7 @@ writable_event_handlers:
 
 event_handlers:
   type: bool
-  default: "{{writable_event_handlers or api_delete_handler}}"
+  default: "{% if writable_event_handlers or api_delete_handler %}true{% endif %}"
   when: false
 
 writable_acl:
