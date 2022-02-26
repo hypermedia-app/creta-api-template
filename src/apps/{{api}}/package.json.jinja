@@ -4,7 +4,7 @@
   "private": "true",
   "scripts": {
     "bootstrap": "talos put --api ${{api|upper}}_BASE --endpoint $SPARQL_URL --user $SPARQL_USER --password $SPARQL_PASSWORD",{%- if vocabs %}
-    "bootstrap:vocabs": "talos put-vocabs --apiDoc ${{api|upper}}/api --endpoint $SPARQL_URL --user $SPARQL_USER --password $SPARQL_PASSWORD{% if additional_vocabs and additional_vocabs|length > 1 %}{% for vocab_spec in additional_vocabs %} --extraVocabs {{vocab_spec}}{% endfor %}{% endif %}",{%- endif %}
+    "bootstrap:vocabs": "talos put-vocabs --apiDoc ${{api|upper}}/api --endpoint $SPARQL_URL --user $SPARQL_USER --password $SPARQL_PASSWORD{% if additional_vocabs is not none and additional_vocabs|length > 1 %}{% for vocab_spec in additional_vocabs %} --extraVocabs {{vocab_spec}}{% endfor %}{% endif %}",{%- endif %}
     "build": "tsc"
   },
   "dependencies": {
