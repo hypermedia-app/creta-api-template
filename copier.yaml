@@ -10,6 +10,41 @@ _envops:
   variable_end_string: "}}"
   variable_start_string: "{{"
 
+resource_get_handler:
+  type: bool
+  default: true
+  help: Add default GET handler of all instances of hydra:Resource
+
+collection_get_handler:
+  type: bool
+  default: true
+  help: Add default GET handler of all instances of hydra:Collection
+
+writable_hydra_class:
+  type: bool
+  default: false
+  help: Add PUT/DELETE handlers of instances of hydra:Class and a /api/classes collection resource
+
+api_delete_handler:
+  type: bool
+  default: false
+  help: Add support for DELETE /api which lets the caller force a recreation of the API Documentation's representation
+
+writable_event_handlers:
+  type: bool
+  default: true
+  help: Add support for creating event handler resources
+
+event_handlers:
+  type: bool
+  default: {{ writable_event_handlers or api_delete_handler }}
+  when: false
+
+writable_acl:
+  type: bool
+  default: false
+  help: Add support for creating acl:Authorization resources with PUT
+
 vocabs:
   type: bool
   default: false
