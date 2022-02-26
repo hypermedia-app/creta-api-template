@@ -54,3 +54,4 @@ additional_vocabs:
   type: yaml
   when: "{{vocabs}}"
   help: Additional vocabularies to insert to the store
+  multiline: true
