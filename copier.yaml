@@ -32,7 +32,7 @@ api_delete_handler:
 
 writable_event_handlers:
   type: bool
-  default: true
+  default: false
   help: Add support for creating event handler resources
 
 event_handlers:
