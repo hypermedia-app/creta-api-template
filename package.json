@@ -1,0 +1,8 @@
+{
+  "name": "@hydrofoil/creta-api-template",
+  "version": "0.0.0",
+  "private": true,
+  "devDependencies": {
+    "@changesets/cli": "^2.21.0"
+  }
+}
