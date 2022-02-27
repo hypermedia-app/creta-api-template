@@ -1,5 +1,11 @@
 # @hydrofoil/creta-api-template
 
+## 1.1.1
+
+### Patch Changes
+
+- 04f6531: Wrong `--endpoint` argument in boostrap scripts
+
 ## 1.1.0
 
 ### Minor Changes
