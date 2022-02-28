@@ -3,8 +3,7 @@
   "version": "0.0.0",
   "private": "true",
   "scripts": {
-    "bootstrap": "talos put --api ${{api|upper}}_BASE --endpoint $SPARQL_ENDPOINT --user $SPARQL_USER --password $SPARQL_PASSWORD",{%- if vocabs %}
-    "bootstrap:vocabs": "talos put-vocabs --apiDoc ${{api|upper}}/api --endpoint $SPARQL_ENDPOINT --user $SPARQL_USER --password $SPARQL_PASSWORD{% if additional_vocabs and additional_vocabs|length > 0 %}{% for vocab_spec in additional_vocabs %} --extraVocabs {{vocab_spec}}{% endfor %}{% endif %}",{%- endif %}
+    "bootstrap": "talos put --api ${{api|upper}}_BASE --endpoint $SPARQL_ENDPOINT --user $SPARQL_USER --password $SPARQL_PASSWORD",
     "build": "tsc"
   },
   "dependencies": {

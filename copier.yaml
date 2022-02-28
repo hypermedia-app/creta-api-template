@@ -43,14 +43,3 @@ writable_acl:
   type: bool
   default: false
   help: Add support for creating acl:Authorization resources with PUT
-
-vocabs:
-  type: bool
-  default: false
-  help: Add NPM script for inserting vocabularies to the store
-
-additional_vocabs:
-  type: yaml
-  when: "{{vocabs}}"
-  help: Additional vocabularies to insert to the store
-  multiline: true
