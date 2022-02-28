@@ -1,5 +1,11 @@
 # @hydrofoil/creta-api-template
 
+## 1.2.0
+
+### Minor Changes
+
+- bcc6a60: Remove `vocabs` option
+
 ## 1.1.1
 
 ### Patch Changes
