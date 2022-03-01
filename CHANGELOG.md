@@ -1,5 +1,12 @@
 # @hydrofoil/creta-api-template
 
+## 1.2.1
+
+### Patch Changes
+
+- a277557: Update creta packages
+- 9a00102: Make talos a dev dependency
+
 ## 1.2.0
 
 ### Minor Changes
