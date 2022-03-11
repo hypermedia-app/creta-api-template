@@ -1,5 +1,12 @@
 # @hydrofoil/creta-api-template
 
+## 1.2.2
+
+### Patch Changes
+
+- 4e9fc7e: Make dependabot possible for www and ontodia
+- c59162e: Keep package.json not as jinja
+
 ## 1.2.1
 
 ### Patch Changes
