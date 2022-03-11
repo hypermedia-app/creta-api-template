@@ -3,6 +3,6 @@
   "version": "1.2.1",
   "private": true,
   "devDependencies": {
-    "@changesets/cli": "^2.21.0"
+    "@changesets/cli": "^2.21.1"
   }
 }
