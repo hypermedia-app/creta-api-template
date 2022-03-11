@@ -1,5 +1,11 @@
 # @hydrofoil/creta-api-template
 
+## 1.2.3
+
+### Patch Changes
+
+- d9c9254: Wrong `package.json` updated
+
 ## 1.2.2
 
 ### Patch Changes
