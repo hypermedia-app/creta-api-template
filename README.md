@@ -1,5 +1,5 @@
 # Creta API template
 
-Use in conjunction with [creta-project-template](https://github.com/hypermedia-app/creta-project-template)
+Uses behind the scenes by [creta-template-app](https://github.com/hypermedia-app/creta-template-app)
 
 Refer to that repository for usage instructions.
