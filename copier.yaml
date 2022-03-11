@@ -12,7 +12,7 @@ _envops:
 
 _tasks:
   - 'npx npm-add-script -f -k bootstrap -v "talos put --api \${{api|upper}}_BASE --endpoint \$SPARQL_ENDPOINT --user \$SPARQL_USER --password \$SPARQL_PASSWORD"'
-  - "npx json -If package.json 
+  - "npx json -If apps/{{api}}/package.json 
       -e 'this.name=\"@{{organization}}/{{api}}\"'
     "
 
