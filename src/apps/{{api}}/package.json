@@ -1,9 +1,9 @@
 {
-  "name": "@{{organization}}/{{api}}",
+  "name": "api",
   "version": "0.0.0",
   "private": "true",
   "scripts": {
-    "bootstrap": "talos put --api ${{api|upper}}_BASE --endpoint $SPARQL_ENDPOINT --user $SPARQL_USER --password $SPARQL_PASSWORD",
+    "bootstrap": "",
     "build": "tsc"
   },
   "dependencies": {

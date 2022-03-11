@@ -10,6 +10,12 @@ _envops:
   variable_end_string: "}}"
   variable_start_string: "{{"
 
+_tasks:
+  - 'npx npm-add-script -f -k bootstrap -v "talos put --api \${{api|upper}}_BASE --endpoint \$SPARQL_ENDPOINT --user \$SPARQL_USER --password \$SPARQL_PASSWORD"'
+  - "npx json -If package.json 
+      -e 'this.name=\"@{{organization}}/{{api}}\"'
+    "
+
 resource_get_handler:
   type: bool
   default: true
