@@ -11,8 +11,8 @@ _envops:
   variable_start_string: "{{"
 
 _tasks:
-  - cd apps/{{api}} || cd apps\{{api}}
-  - '(npx npm-add-script -f -k bootstrap -v "talos put --api \${{api|upper}}_BASE --endpoint \$SPARQL_ENDPOINT --user \$SPARQL_USER --password \$SPARQL_PASSWORD")'
+  - "cd apps && cd {{api}} && python3 _make_npm_script.py || python _make_npm_script.py"
+  - "cd apps && cd {{api}} && python3 _delete_temp_files_and_self.py || python _delete_temp_files_and_self.py"
   - "npx json -If apps/{{api}}/package.json 
       -e 'this.name=\"@{{organization}}/{{api}}\"'
     "
