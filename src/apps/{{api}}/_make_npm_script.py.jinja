@@ -1,9 +1,0 @@
-import sys
-import subprocess
-
-if 'win' in sys.platform.lower():
-    subprocess.run(
-        '(npx npm-add-script -f -k bootstrap -v "talos put --api ${{api|upper}}_BASE --endpoint $SPARQL_ENDPOINT --user $SPARQL_USER --password $SPARQL_PASSWORD")', shell=True)
-else:
-    subprocess.run(
-        "(npx npm-add-script -f -k bootstrap -v 'talos put --api ${{api|upper}}_BASE --endpoint $SPARQL_ENDPOINT --user $SPARQL_USER --password $SPARQL_PASSWORD')", shell=True)

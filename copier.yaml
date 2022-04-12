@@ -11,10 +11,9 @@ _envops:
   variable_start_string: "{{"
 
 _tasks:
-  - "cd apps && cd {{api}} && python3 _make_npm_script.py || python _make_npm_script.py"
-  - "cd apps && cd {{api}} && python3 _delete_temp_files_and_self.py || python _delete_temp_files_and_self.py"
   - "npx json -If apps/{{api}}/package.json 
       -e 'this.name=\"@{{organization}}/{{api}}\"'
+      -e 'this.scripts.bootstrap = this.scripts.bootstrap.replace(\"$api\", \"${{api | upper}}\")'
     "
 
 resource_get_handler:
