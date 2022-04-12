@@ -11,9 +11,9 @@ _envops:
   variable_start_string: "{{"
 
 _tasks:
-  - '(cd apps/{{api}}; npx npm-add-script -f -k bootstrap -v "talos put --api \${{api|upper}}_BASE --endpoint \$SPARQL_ENDPOINT --user \$SPARQL_USER --password \$SPARQL_PASSWORD")'
   - "npx json -If apps/{{api}}/package.json 
       -e 'this.name=\"@{{organization}}/{{api}}\"'
+      -e 'this.scripts.bootstrap = this.scripts.bootstrap.replace(\"$api\", \"${{api | upper}}\")'
     "
 
 resource_get_handler:

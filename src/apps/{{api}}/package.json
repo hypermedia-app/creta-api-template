@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": "true",
   "scripts": {
-    "bootstrap": "",
+    "bootstrap": "talos put --api $api_BASE --endpoint $SPARQL_ENDPOINT --user $SPARQL_USER --password $SPARQL_PASSWORD",
     "build": "tsc"
   },
   "dependencies": {

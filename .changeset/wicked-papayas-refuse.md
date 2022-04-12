@@ -2,4 +2,4 @@
 "@hydrofoil/creta-api-template": patch
 ---
 
-Script added in wrong package.json
+Make template work on both Windows and UNIX

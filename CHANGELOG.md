@@ -1,5 +1,11 @@
 # @hydrofoil/creta-api-template
 
+## 1.2.4
+
+### Patch Changes
+
+- 270a7d1: Script added in wrong package.json
+
 ## 1.2.3
 
 ### Patch Changes
