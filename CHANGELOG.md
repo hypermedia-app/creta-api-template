@@ -1,5 +1,12 @@
 # @hydrofoil/creta-api-template
 
+## 1.2.5
+
+### Patch Changes
+
+- 8f2214b: Bogus `.rej` files produced when updating app
+- 4bc076c: Make template work on both Windows and UNIX
+
 ## 1.2.4
 
 ### Patch Changes
