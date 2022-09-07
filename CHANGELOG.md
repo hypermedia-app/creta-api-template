@@ -1,5 +1,11 @@
 # @hydrofoil/creta-api-template
 
+## 2.0.0
+
+### Major Changes
+
+- e8326f0: build(deps): bump @hydrofoil/knossos from 0.6.12 to 0.9.5 in /src/apps/{{api}}
+
 ## 1.2.5
 
 ### Patch Changes
