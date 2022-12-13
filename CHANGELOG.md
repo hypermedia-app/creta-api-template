@@ -1,5 +1,11 @@
 # @hydrofoil/creta-api-template
 
+## 2.0.1
+
+### Patch Changes
+
+- cb04507: build(deps-dev): bump @hydrofoil/talos from 0.4.17 to 0.6.2
+
 ## 2.0.0
 
 ### Major Changes
