@@ -10,6 +10,6 @@
     "@hydrofoil/knossos": "^0.9.5"
   },
   "devDependencies": {
-    "@hydrofoil/talos": "^0.4.4"
+    "@hydrofoil/talos": "^0.6.2"
   }
 }
